@@ -1,0 +1,535 @@
+@font-face
+{
+    font-family: 'Barlow-bold';
+    src:url(assets/fonts/Barlow-bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face
+{
+    font-family: 'Barlow-light';
+    src:url(assets/fonts/Barlow-light.ttf);
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face
+{
+    font-family: 'Playfair-display-Regular';
+    src:url(assets/fonts/Playfair-display-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin tablets
+{
+    @media screen and (max-width: 52rem)
+    {
+        @content;
+    }
+}
+
+@mixin phones
+{
+    @media screen and (max-width: 41rem)
+    {
+        @content;
+    }
+}
+
+.title 
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @include tablets
+    {
+        font-size: 1.4rem;
+    }
+
+    @include phones
+    {
+        font-size: 1.3rem;
+    }
+}
+
+.subtitle
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    @include tablets
+    {
+        font-size: 1rem;
+    }
+
+    @include phones
+    {
+        font-size: 0.9rem;
+    }
+}
+
+.text
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgb(64, 64, 64);
+
+    @include tablets
+    {
+        font-size: 0.8rem; 
+    }
+
+    @include phones
+    {
+        font-size: 0.7rem; 
+    }
+}
+
+body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .news-image
+    {
+        width: 300px;
+
+        @include tablets
+        {
+            width: 290px;
+        }
+
+        @include phones
+        {
+            width: 280px;
+        }
+    }
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: rgb(239,65, 56);
+
+    @include phones
+    {
+        flex-direction: column;
+    }
+
+    img
+    {
+        width: 120px;
+        
+        @include tablets
+        {
+            width: 110px;
+        }
+
+        @include phones
+        {
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        @include tablets
+        {
+            gap: 15px;
+        }
+
+        @include phones
+        {
+            gap: 10px;
+            flex-direction: column;
+        }
+    }
+}
+
+main
+{
+    article
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        @include phones
+        {
+            grid-template-columns: 1fr;
+        }
+
+        section
+        {
+            margin-left: 10px;
+        }
+    }
+}
+
+fieldset
+{
+    .form-elements
+    {
+        padding: 10px 0;
+
+        .input
+        {
+            outline: none;
+            border-radius: 4px;
+            padding: 4px 8px;
+            width: 80%;
+        }
+
+        .select
+        {
+            outline: none;
+            border-radius: 4px;
+            padding: 4px 8px;
+            width: 85%;
+        }
+
+        .textarea
+        {
+            outline: none;
+            border-radius: 4px;
+            padding: 4px 8px;
+            width: 80.5%;
+            min-height: 80px;
+            resize: vertical;
+        }
+    }
+
+    .btn
+    {
+        margin-top: 10px;
+        outline: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        width: 85%;
+        min-height: 40px; 
+        cursor: pointer;
+
+        &:hover
+        {
+            background-color: #000;
+            color: #ffff00;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}
+
+footer
+{
+    width: 100%;
+
+    .links
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 10px 0;
+
+        @include phones
+        {
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .links-li
+    {
+        list-style-type: none;
+    }
+
+    .link-a
+    {
+        font-family: 'Playfair-display-Regular', sans-serif;
+        font-size: 0.9rem;
+        font-weight: normal;
+        text-decoration: none;
+        color: rgb(64, 64, 64);
+
+        @include tablets
+        {
+            font-size: 0.8rem; 
+        }
+
+        @include phones
+        {
+            font-size: 0.7rem; 
+        }
+
+        &:hover
+        {
+            color: #000000;
+            font-weight: bold;
+        }
+    }
+
+    .links-section
+    {
+        margin: 0px 40px;
+        font-family: 'Playfair-display-Regular', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+
+        @include tablets
+        {
+            font-size: 0.9rem; 
+        }
+
+        @include phones
+        {
+            font-size: 0.8rem; 
+        }
+    }
+}
+
+.nav-a
+{
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+    @include tablets
+    {
+        font-size: 0.6rem;
+    }
+
+    @include phones
+    {
+        font-size: 0.5rem;
+    }
+
+    &:hover
+    {
+        font-size: 0.72rem;
+    }
+}
+
+.news
+{
+    margin: 0 auto;
+    gap: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.8rem;
+    flex-wrap: wrap;  
+}
+
+.landing-slogan 
+{
+    margin-left: 10px;
+
+    .title
+    {
+        text-align: center;
+        letter-spacing: 1rem;
+        word-spacing: 1rem;
+        line-height: 3rem;
+
+        @include tablets
+        {
+            font-size: 1.4rem;
+        }
+
+        @include phones
+        {
+            font-size: 1.3rem;
+        }
+    }
+
+    .subtitle
+    {
+        text-align: center;
+        letter-spacing: 1.5rem;
+        word-spacing: 1.5rem;
+        line-height: 4rem;
+
+        @include tablets
+        {
+            font-size: 1rem;
+        }
+
+        @include phones
+        {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.contact
+{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .form
+    {
+        margin-top: 20px; 
+        font-family: 'Playfair-display-Regular', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        background-color: rgb(239,65, 56);
+        color: #fff;
+        margin-right: 10px; 
+
+        @include tablets
+        {
+            font-size: 1rem;
+        }
+
+        @include phones
+        {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.comments
+{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .comments-image
+    {
+        margin: 20px;
+        height: 100px;
+        align-items: center;
+
+        @include tablets
+        {
+            height: 90px;
+        }
+
+        @include phones
+        {
+            height: 80px;
+        }
+    }
+}
+
+.label
+{
+    display: block;
+    margin-bottom: 2px;
+    font-family: 'Playfair-display-Regular', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+
+    @include tablets
+    {
+        font-size: 0.8rem; 
+    }
+
+    @include phones
+    {
+        font-size: 0.7rem; 
+    }
+}
+
+.footer-socia-media
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-image
+    {
+        width: 120px;
+
+        @include tablets
+        {
+            width: 110px;
+        }
+
+        @include phones
+        {
+            width: 100px;
+        }
+    }
+
+    .social-media
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .twitter
+    {
+        &:hover
+        {
+            transition: 350ms all ease;
+            transform: scale(1.2);
+        }
+    }
+
+    .instagram
+    {
+        &:hover
+        {
+            transition: 350ms all ease;
+            transform: scale(1.2);
+        }
+    }
+
+    .facebook
+    {
+        &:hover
+        {
+            transition: 350ms all ease;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.main-title
+{
+    margin: 78px 0 92px;
+}
+
+.error-message 
+{
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 2px pink;
+}
+
+.success-message 
+{
+    color: #008000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px pink;
+}

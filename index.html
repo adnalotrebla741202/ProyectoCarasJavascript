@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título del Portal Web -->
+    <title>Suscripción Revista Caras</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="sass/main.css">
+    <!-- Icono del portal web -->
+    <link rel="icon" href="assets/img/C.ico">
+    <script src="js/functions.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo-blanco-rojo.png" alt="Logo de la revista caras con letras blancas">
+        <nav>
+            <a class="nav-a" href="https://www.caras.com.mx/entretenimiento/">Entretenimiento</a>
+            <a class="nav-a" href="https://www.caras.com.mx/realeza/">Realeza</a>
+            <a class="nav-a" href="https://www.caras.com.mx/moda/">Moda</a>
+            <a class="nav-a" href="https://www.caras.com.mx/lifestyle/">Lifestyle</a>
+            <a class="nav-a" href="https://www.caras.com.mx/personalidades/">Personalidades</a>
+            <a class="nav-a" href="https://www.caras.com.mx/arte-cultura/">Arte y Cultura</a>
+            <a class="nav-a" href="https://www.caras.com.mx/deportes/">Sports</a>
+            <a class="nav-a" href="https://www.caras.com.mx/revista">Revista</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="landing-slogan">
+                <h1 class="title main-title">
+                    LAS NOTICIAS DE LA SOCIEDAD MEXICANA
+                    Y DE ESTILO DE VIDA
+                    COMO SIEMPRE LAS QUISISTE LEER
+                </h1>
+                <h2 class="subtitle">
+                    EDICIÓN IMPRESA Y/O DIGITAL
+                    SUSCRÍBETE Y SE PARTE DE LOS
+                    SOCIOS DE LA REVISTA CARAS
+                </h2>
+            </section>  
+            <section class="contact">
+                <form class="form">
+                    <fieldset>
+                        <p class="title">Contacta con nosotros</p>
+                        <div class="form-elements">
+                            <label class="label" for="name">Nombre: </label>
+                            <input class="input"
+                                id="name"
+                                name="name"
+                                type="text"
+                                minlength="10"
+                                maxlength="50"
+                                placeholder="Ingresa tu nombre completo"
+                            >
+                            <!-- Mensaje de error -->
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="form-elements">
+                            <label class="label" for="email">E-mail: </label>
+                            <input class="input"
+                                id="email"
+                                name="email"
+                                type="email"
+                                minlength="8"
+                                placeholder="alandap@prodigy.net.mx"
+                            >
+                            <!-- Mensaje de error -->
+                            <div class="error-message" id="email-error"></div> 
+                        </div>
+                        <div class="form-elements">
+                            <label class="label" for="phone">Teléfono: </label>
+                            <input class="input"
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                minlength="10"
+                                placeholder="Teléfono"
+                            >
+                            <!-- Mensaje de error -->
+                            <div class="error-message" id="phone-error"></div> 
+                        </div>
+                        <div class="form-elements">
+                            <label class="label" for="contact_subject">Quiero: </label>
+                            <select class="select" id="contact_subject" name="subject">
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value="printed">Información de la suscripción a la edición impresa</option>
+                                <option value="digital">Información de la suscripción a la edición digital</option>
+                                <option value="printed-and-digital">Información de la suscripción a la edición impresa y a la edición digital</option>
+                            </select>
+                            <!-- Mensaje de error -->
+                            <div class="error-message" id="subject-error"></div> 
+                        </div>
+                        <div class="form-elements">
+                            <label class="label" for="contact_consult">Mensaje:</label>
+                            <textarea class="textarea"
+                                id="contact_consult" 
+                                name="consult"
+                                minlength="30"
+                                maxlength="1000"
+                                placeholder="Tu mensaje"
+                            ></textarea>
+                            <!-- Mensaje de error -->
+                            <div class="error-message" id="consult-error"></div> 
+                        </div>
+                        <div>
+                            <input class="btn" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2 class="subtitle">Beneficios exclusivos para suscriptores</h2>
+                <p class="text">La revista <strong>Caras</strong> en su compromiso constante por ofrecer contenido de calidad y comprometerse con sus clientes, continuamente
+                   lanza promociones especiales para que puedas suscribirte y disfrutar de todo su contenido exclusivo. Por un super precio por 
+                   mes, tendrás acceso completo a todo el contenido digital y newsletters. Además, con planes superiores, podrás recibir la 
+                   revista en papel directamente en tu hogar.
+                   Al suscribirte, estarás siempre actualizado con nuestro perfil y podrás participar en sorteos y obtener beneficios 
+                   exclusivos. Estos sorteos y beneficios son una forma de agradecer tu apuesta y fidelidad hacia nuestra publicación, ya que 
+                   consideramos que la cultura es una de las herramientas más eficaces para generar un pensamiento crítico, que te permita 
+                   tomar decisiones con conocimiento y verdadera libertad.
+                   Nuestra galería de fotos a continuación muestra una parte del contenido al cual tendrás acceso con tu suscripción. No te 
+                   pierdas de este contenido exclusivo y suscribete ya mismo.
+                </p>
+                <div class="news">
+                    <figure>
+                        <a href="https://www.caras.com.mx/deportes/nadador-mexicano-es-descalificado-de-los-juegos-olimpicos-2024-por-esta-razon"><img class="news-image" src="assets/img/news01.png" alt="Enlace a la noticia del porque fue descalificado nadador mexicano de los Juegos Olímpicos 2024"></a>
+                        <figcaption>Nadador mexicano es descalificado de los Juegos Olímpicos 2024</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://www.caras.com.mx/entretenimiento/asi-fue-la-presentacion-de-celine-dion-en-los-juegos-olimpicos-2024-y-esto-cobro"><img class="news-image" src="assets/img/news02.png" alt="Enlace a la notcia de como fue la presentación de Céline Dion en los Juegos Olímpicos 2024 y cuanto cobró"></a>
+                        <figcaption>Así fue la presentación de Céline Dion</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://www.caras.com.mx/entretenimiento/ben-affleck-compra-millonaria-mansion-para-vivir-como-soltero"><img class="news-image" src="assets/img/news03.png" alt='Enlace a la noticia de que Ben Affleck compra millonaria mansión para vivir como “soltero”'></a>
+                        <figcaption>Ben Affleck compra millonaria mansión</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://www.caras.com.mx/entretenimiento/estos-fueron-los-tres-elegantes-vestidos-que-uso-angela-aguilar-para-su-boda-con-nodal"><img class="news-image" src="assets/img/news04.png" alt="Enlace a la noticia de cuáles fueron los tres elegantes vestidos que usó Ángela Aguilar para su boda con Nodal"></a>
+                        <figcaption>Estos fueron los tres elegantes vestidos que usó Ángela Aguilar</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://www.caras.com.mx/entretenimiento/victoria-ruffo-habla-de-su-reconciliacion-con-eugenio-derbez"><img class="news-image" src="assets/img/news05.png" alt="Enlace a la noticia donde Victoria Ruffo habla de su reconciliación con Eugenio Derbez"></a>
+                        <figcaption>Victoria Ruffo habla de su reconciliación con Eugenio Derbez</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="comments">
+                <h2 class="subtitle">Testimonios de los Suscriptores</h2>
+                <div>
+                    <img class="comments-image" src="assets/img/man_avatar01b.png" alt="Avatar usuario Alberto">
+                    <p class="text">Me encanta que sus publicaciones están a la vanguardia y que publican las noticias del momento.</p>
+                    <img class="comments-image" src="assets/img/woman_avatar01_148x148.png" alt="Avatar usuaria Alejandra">
+                    <p class="text">Yo soy fan acérrima de la sección de spcialité y no me la pierdo por nada del mundo.</p>
+                    <img class="comments-image" src="assets/img/woman_avatar02.png" alt="Avatar usuaria Arcelia">
+                    <p class="text">A mi me gusta darle seguimiento a la vida de mis artistas favoritos.</p>
+                    <img class="comments-image" src="assets/img/man_avatar02.png" alt="Avatar del suario Benito">
+                    <p class="text">Yo soy fan de los deportes y sigo la dicha sección para estar informado como van los atletas en el evento de las olimpiadas.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <article class="footer-socia-media">
+            <section>
+                <img class="footer-image" src="assets/img/Logo1.png" alt="Logo de la revista caras con letras rojas">
+            </section>
+            <section class="social-media">
+                <a class="twitter" target="_blank" href="https://x.com/carasmexico"><img src="assets/img/x.png" alt="Icono de la red social X"></a>
+                <a class="instagram" target="_blank" href="https://www.instagram.com/carasmexico/?hl=es-la"><img src="assets/img/instagram.png" alt="Icono de la red social instagram"></a>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/Revista.Caras/?locale=es_LA"><img src="assets/img/facebook.png" alt="Icono de la red social facebook"></a>
+            </section>
+        </article>
+        <section class="links">
+            <article>
+                <h3 class="links-section">Descubre más</h3>
+                <ul>
+                    <li class="links-li"><a class="link-a" href="https://www.caras.com.mx/entretenimiento/">Entretenimiento</a></li>
+                    <li class="links-li"><a class="link-a" href="https://www.caras.com.mx/belleza/">Belleza</a></li>
+                    <li class="links-li"><a class="link-a" href="https://www.caras.com.mx/moda/">Moda</a></li>
+                    <li class="links-li"><a class="link-a" href="https://www.caras.com.mx/personalidades/">Personalidades</a></li>
+                    <li class="links-li"><a class="link-a" href="https://www.caras.com.mx/arte-cultura/">Arte y Cultura</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="links-section">Revista</h3>
+                <ul>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://apps.apple.com/mx/app/caras-m%C3%A9xico/id489597379">App Store</a></li>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://www.tususcripcion.com/product/n-caras-mexico/">Edición Impresa</a></li>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://www.magzter.com/es/MX/Editorial-Televisa/Caras-M%C3%A9xico/Celebrity/">Magzter</a></li>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://editorialtelevisa.pressreader.com/caras-mexico">Pressreader</a></li>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://carasmexico.zinioapps.com/shop">Zinio</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="links-section">Legales</h3>
+                <ul>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://bases.editorialtelevisa.com.mx/caras/#aviso">Aviso de privacidad</a></li>
+                    <li class="links-li"><a class="link-a" target="_blank" href="https://bases.editorialtelevisa.com.mx/caras/#convenio">Términos de servicio</a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
